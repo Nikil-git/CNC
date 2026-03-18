@@ -3,27 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CNC Monitor Care | Monitor Repair Experts in Coimbatore</title>
-  <meta
-    name="description"
-    content="CNC Monitor Care offers expert monitor repair and service in Coimbatore with over 18 years of experience, official supplier parts, WhatsApp support, and trusted service."
-  />
-  <meta
-    name="keywords"
-    content="CNC Monitor Care, monitor repair Coimbatore, CNC monitor service, display repair, monitor service center, Peelamedu monitor repair"
-  />
+  <title>CNC Monitor Care | Professional Monitor Repair in Coimbatore</title>
+  <meta name="description" content="CNC Monitor Care offers professional monitor repair and service in Coimbatore with over 18 years of experience, official supplier parts, WhatsApp support, and trusted local service." />
+  <meta name="keywords" content="CNC Monitor Care, monitor repair Coimbatore, monitor service Peelamedu, display repair, monitor technician, official supplier parts" />
+  <meta name="theme-color" content="#0b1220" />
   <style>
+    :root {
+      --bg: #08111f;
+      --bg-soft: #0f172a;
+      --card: #111827;
+      --card-2: #162033;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --line: rgba(255,255,255,0.08);
+      --blue: #3b82f6;
+      --blue-2: #60a5fa;
+      --green: #25d366;
+      --white: #ffffff;
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+      --radius: 22px;
+    }
+
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: #e5e7eb;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(59,130,246,0.15), transparent 28%),
+        linear-gradient(180deg, #07101d 0%, #0a1322 100%);
+      color: var(--text);
       line-height: 1.6;
     }
 
@@ -38,26 +51,25 @@
     }
 
     .container {
-      width: 92%;
-      max-width: 1200px;
-      margin: auto;
+      width: min(92%, 1180px);
+      margin: 0 auto;
     }
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(8, 15, 30, 0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(7, 12, 24, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
     }
 
     nav {
+      min-height: 78px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 20px;
-      padding: 14px 0;
     }
 
     .brand {
@@ -67,186 +79,215 @@
     }
 
     .brand img {
-      width: 180px;
-      height: auto;
-      border-radius: 8px;
+      width: 168px;
+      border-radius: 12px;
       background: #fff;
-      padding: 4px;
+      padding: 6px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
     }
 
-    .brand-text {
-      display: flex;
-      flex-direction: column;
+    .brand-copy strong {
+      display: block;
+      color: var(--white);
+      letter-spacing: 0.3px;
     }
 
-    .brand-text strong {
-      color: #ffffff;
-      font-size: 1rem;
-      letter-spacing: 0.5px;
-    }
-
-    .brand-text span {
-      color: #94a3b8;
-      font-size: 0.9rem;
+    .brand-copy span {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
       flex-wrap: wrap;
+      gap: 22px;
       align-items: center;
     }
 
     .nav-links a {
       color: #dbeafe;
-      font-weight: 600;
-      transition: 0.25s ease;
+      font-weight: 700;
+      font-size: 0.96rem;
+      transition: 0.2s ease;
     }
 
     .nav-links a:hover {
-      color: #60a5fa;
+      color: var(--blue-2);
     }
 
     .hero {
+      position: relative;
       min-height: 92vh;
       display: flex;
       align-items: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
       background:
-        linear-gradient(rgba(7, 12, 24, 0.78), rgba(7, 12, 24, 0.9)),
-        url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        linear-gradient(rgba(6, 11, 21, 0.78), rgba(6, 11, 21, 0.92)),
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at left top, rgba(96,165,250,0.18), transparent 28%);
+      z-index: -1;
     }
 
     .hero-wrap {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 40px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 34px;
+      padding: 72px 0;
       align-items: center;
-      padding: 60px 0;
     }
 
-    .hero-content h1 {
-      font-size: 3.2rem;
-      line-height: 1.1;
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
       margin-bottom: 18px;
-      color: #ffffff;
+      background: rgba(59,130,246,0.12);
+      border: 1px solid rgba(96,165,250,0.25);
+      color: #dbeafe;
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 700;
     }
 
-    .hero-content h1 span {
-      color: #60a5fa;
+    .hero h1 {
+      font-size: clamp(2.2rem, 4.5vw, 4rem);
+      line-height: 1.08;
+      margin-bottom: 18px;
+      color: var(--white);
     }
 
-    .hero-content p {
-      color: #cbd5e1;
+    .hero h1 span {
+      color: var(--blue-2);
+    }
+
+    .hero p {
+      color: #d4dbe7;
       font-size: 1.08rem;
-      margin-bottom: 28px;
-      max-width: 700px;
+      max-width: 720px;
+      margin-bottom: 24px;
     }
 
-    .hero-badges {
+    .trust-row {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       margin-bottom: 28px;
     }
 
-    .badge {
-      background: rgba(96, 165, 250, 0.12);
-      border: 1px solid rgba(96, 165, 250, 0.25);
-      color: #dbeafe;
+    .chip {
       padding: 10px 14px;
       border-radius: 999px;
-      font-size: 0.95rem;
-      font-weight: 600;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #e0ecff;
+      font-weight: 700;
+      font-size: 0.94rem;
     }
 
-    .btn-group {
+    .btn-row {
       display: flex;
-      gap: 14px;
       flex-wrap: wrap;
+      gap: 14px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-weight: 700;
-      transition: 0.25s ease;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 160px;
+      padding: 15px 24px;
+      border-radius: 14px;
+      font-weight: 800;
+      transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #2563eb, #60a5fa);
       color: #fff;
-      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
+      background: linear-gradient(135deg, var(--blue), var(--blue-2));
+      box-shadow: 0 12px 30px rgba(37,99,235,0.3);
     }
 
     .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.2);
       color: #fff;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
     }
 
-    .btn-secondary:hover {
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.08);
-    }
-
-    .hero-card {
-      background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 22px;
+    .hero-side {
+      background: linear-gradient(180deg, rgba(22,32,51,0.97), rgba(10,18,34,0.96));
+      border: 1px solid var(--line);
+      border-radius: 28px;
       padding: 28px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      box-shadow: var(--shadow);
     }
 
-    .hero-card h3 {
-      color: #ffffff;
-      margin-bottom: 20px;
+    .panel-title {
       font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 18px;
     }
 
-    .quick-info {
+    .panel-grid {
       display: grid;
       gap: 14px;
     }
 
-    .quick-item {
+    .panel-item {
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 16px;
     }
 
-    .quick-item strong {
+    .panel-item strong {
       display: block;
-      color: #60a5fa;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      color: var(--blue-2);
     }
 
-    .quick-item span,
-    .quick-item a {
+    .panel-item span,
+    .panel-item a {
       color: #dbeafe;
+      word-break: break-word;
     }
 
     section {
-      padding: 88px 0;
+      padding: 90px 0;
     }
 
-    .section-title {
+    .section-head {
       text-align: center;
-      font-size: 2.3rem;
-      color: #ffffff;
+      margin-bottom: 48px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.9rem, 3vw, 2.7rem);
+      color: var(--white);
       margin-bottom: 12px;
     }
 
-    .section-subtitle {
-      text-align: center;
-      color: #94a3b8;
+    .section-head p {
       max-width: 760px;
-      margin: 0 auto 48px;
+      margin: 0 auto;
+      color: var(--muted);
     }
 
     .grid {
@@ -254,176 +295,314 @@
       gap: 24px;
     }
 
-    .three-col {
+    .grid-3 {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .two-col {
+    .grid-2 {
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      align-items: start;
     }
 
     .card {
-      background: linear-gradient(180deg, #111827, #0f172a);
-      border: 1px solid rgba(255,255,255,0.07);
+      background: linear-gradient(180deg, var(--card), var(--card-2));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
       padding: 28px;
-      border-radius: 20px;
       transition: 0.25s ease;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
     }
 
     .card:hover {
       transform: translateY(-6px);
       border-color: rgba(96,165,250,0.35);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.28);
     }
 
     .card h3 {
-      color: #ffffff;
+      color: var(--white);
       margin-bottom: 12px;
-      font-size: 1.2rem;
+      font-size: 1.18rem;
     }
 
     .card p {
-      color: #cbd5e1;
+      color: #d0d8e6;
     }
 
     .stats {
-      margin-top: 34px;
+      margin-top: 30px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 18px;
     }
 
     .stat {
-      background: #0f172a;
-      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
       border-radius: 18px;
       text-align: center;
-      padding: 22px;
+      padding: 24px;
     }
 
     .stat h4 {
+      color: var(--blue-2);
       font-size: 2rem;
-      color: #60a5fa;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .stat p {
-      color: #cbd5e1;
+      color: var(--muted);
+      font-weight: 700;
     }
 
-    .cta {
+    .split {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .highlight-box {
+      height: 100%;
+      background: linear-gradient(135deg, rgba(37,99,235,0.16), rgba(15,23,42,0.95));
+      border: 1px solid rgba(96,165,250,0.2);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .highlight-box h3 {
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .highlight-box p {
+      color: #d8e0ec;
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .check {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: #e5edf9;
+      font-weight: 700;
+    }
+
+    .reviews .card {
+      position: relative;
+    }
+
+    .stars {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #fbbf24;
+      letter-spacing: 2px;
+    }
+
+    .reviewer {
+      display: block;
+      margin-top: 14px;
+      color: var(--blue-2);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .faq-wrap {
+      display: grid;
+      gap: 16px;
+    }
+
+    details {
+      background: linear-gradient(180deg, #101827, #121d30);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: #d4dbe7;
+    }
+
+    .cta-band {
       background: linear-gradient(135deg, #1d4ed8, #2563eb, #0f172a);
       border-top: 1px solid rgba(255,255,255,0.08);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
-    .cta-box {
+    .cta-band .inner {
       text-align: center;
       max-width: 850px;
-      margin: auto;
+      margin: 0 auto;
     }
 
-    .cta-box h2 {
-      font-size: 2.2rem;
-      color: #fff;
-      margin-bottom: 14px;
+    .cta-band h2 {
+      color: var(--white);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 12px;
     }
 
-    .cta-box p {
+    .cta-band p {
       color: #dbeafe;
       margin-bottom: 24px;
-      font-size: 1.05rem;
     }
 
-    .contact-box {
-      background: linear-gradient(180deg, #111827, #0f172a);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 20px;
+    .contact-box,
+    .map-box {
+      background: linear-gradient(180deg, var(--card), var(--card-2));
+      border: 1px solid var(--line);
+      border-radius: 24px;
       padding: 28px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
     }
 
-    .contact-box h3 {
+    .contact-box h3,
+    .map-box h3 {
+      color: var(--white);
       margin-bottom: 16px;
-      color: #ffffff;
+      font-size: 1.35rem;
     }
 
     .contact-line {
       margin-bottom: 12px;
-      color: #cbd5e1;
+      color: #d7dfec;
     }
 
     .contact-line a {
-      color: #93c5fd;
+      color: #9cc9ff;
+      font-weight: 700;
     }
 
-    .why-list {
+    .contact-mini {
       display: grid;
       gap: 14px;
+      margin-top: 18px;
     }
 
-    .why-item {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.05);
-      padding: 16px;
+    .mini {
+      padding: 14px 16px;
       border-radius: 14px;
-      color: #cbd5e1;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.05);
+      color: #dce6f4;
     }
 
-    .why-item strong {
-      color: #ffffff;
+    .map-frame {
+      margin-top: 14px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      min-height: 320px;
+    }
+
+    .map-frame iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
       display: block;
-      margin-bottom: 4px;
     }
 
     footer {
-      background: #050b16;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      text-align: center;
-      padding: 26px 0;
-      color: #94a3b8;
+      padding: 38px 0 28px;
+      border-top: 1px solid var(--line);
+      background: rgba(4, 9, 17, 0.92);
     }
 
-    .whatsapp-float {
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      gap: 24px;
+    }
+
+    .footer-brand img {
+      width: 170px;
+      border-radius: 10px;
+      background: #fff;
+      padding: 6px;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p,
+    .footer-col p,
+    .footer-col a {
+      color: var(--muted);
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .copyright {
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .float-wrap {
       position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 999px;
-      font-weight: bold;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      right: 18px;
+      bottom: 18px;
+      display: grid;
+      gap: 10px;
       z-index: 1200;
     }
 
-    .whatsapp-float:hover {
-      transform: translateY(-2px);
+    .float-btn {
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      color: #fff;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.28);
     }
 
-    @media (max-width: 900px) {
-      .hero-wrap {
+    .float-call {
+      background: linear-gradient(135deg, var(--blue), var(--blue-2));
+    }
+
+    .float-whatsapp {
+      background: var(--green);
+    }
+
+    @media (max-width: 980px) {
+      .hero-wrap,
+      .split,
+      .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero-content h1 {
-        font-size: 2.5rem;
-      }
-
-      .brand {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
       nav {
-        flex-direction: column;
+        padding: 14px 0;
         align-items: flex-start;
+        flex-direction: column;
       }
     }
 
-    @media (max-width: 600px) {
-      .hero-content h1 {
-        font-size: 2rem;
+    @media (max-width: 640px) {
+      .brand {
+        align-items: flex-start;
+        flex-direction: column;
       }
 
       .brand img {
@@ -432,21 +611,29 @@
 
       .btn {
         width: 100%;
-        text-align: center;
+      }
+
+      .float-wrap {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .float-btn {
+        padding: 12px 16px;
+        font-size: 0.95rem;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
     <div class="container">
       <nav>
         <div class="brand">
           <img src="logo.jpg" alt="CNC Monitor Care Logo">
-          <div class="brand-text">
+          <div class="brand-copy">
             <strong>CNC Monitor Care</strong>
-            <span>Trusted Monitor Repair Experts in Coimbatore</span>
+            <span>Professional Monitor Repair Experts in Coimbatore</span>
           </div>
         </div>
 
@@ -454,6 +641,8 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -463,43 +652,47 @@
   <section class="hero" id="home">
     <div class="container">
       <div class="hero-wrap">
-        <div class="hero-content">
-          <h1>Professional <span>Monitor Repair & Service</span> You Can Trust</h1>
+        <div>
+          <div class="eyebrow">Trusted local service • 18+ years of experience</div>
+          <h1>Professional <span>Monitor Repair & Service</span> for Homes, Offices, and Businesses</h1>
           <p>
-            CNC Monitor Care brings over 18 years of hands-on experience in monitor diagnosis,
-            repair, maintenance, and parts replacement. We use parts from official suppliers
-            and deliver reliable service for customers who want quality work done right.
+            CNC Monitor Care delivers trusted monitor diagnosis, repair, maintenance, and parts replacement in Coimbatore.
+            We use parts from official suppliers and focus on reliable service, clear communication, and professional support.
           </p>
 
-          <div class="hero-badges">
-            <div class="badge">18+ Years Experience</div>
-            <div class="badge">Official Supplier Parts</div>
-            <div class="badge">WhatsApp Business Support</div>
-            <div class="badge">Coimbatore Service</div>
+          <div class="trust-row">
+            <div class="chip">18+ Years Experience</div>
+            <div class="chip">Official Supplier Parts</div>
+            <div class="chip">WhatsApp Business</div>
+            <div class="chip">Peelamedu, Coimbatore</div>
           </div>
 
-          <div class="btn-group">
+          <div class="btn-row">
             <a href="tel:9043375600" class="btn btn-primary">Call Now</a>
             <a href="https://wa.me/919043375600" target="_blank" class="btn btn-secondary">WhatsApp Us</a>
           </div>
         </div>
 
-        <div class="hero-card">
-          <h3>Quick Contact</h3>
-          <div class="quick-info">
-            <div class="quick-item">
+        <div class="hero-side">
+          <h3 class="panel-title">Quick Business Info</h3>
+          <div class="panel-grid">
+            <div class="panel-item">
               <strong>Phone</strong>
               <a href="tel:9043375600">9043375600</a>
             </div>
-            <div class="quick-item">
+            <div class="panel-item">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/919043375600" target="_blank">Chat on WhatsApp Business</a>
+            </div>
+            <div class="panel-item">
               <strong>Email</strong>
               <a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a>
             </div>
-            <div class="quick-item">
+            <div class="panel-item">
               <strong>Working Hours</strong>
               <span>9:10 AM to 7:30 PM</span>
             </div>
-            <div class="quick-item">
+            <div class="panel-item">
               <strong>Address</strong>
               <span>No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04</span>
             </div>
@@ -511,30 +704,30 @@
 
   <section id="about">
     <div class="container">
-      <h2 class="section-title">Why Customers Choose Us</h2>
-      <p class="section-subtitle">
-        We combine experience, trusted sourcing, and customer-first service to keep your monitors performing at their best.
-      </p>
+      <div class="section-head">
+        <h2>Why Customers Choose CNC Monitor Care</h2>
+        <p>
+          Our business is built on experience, trusted sourcing, and dependable repair work that gives customers confidence.
+        </p>
+      </div>
 
-      <div class="grid three-col">
+      <div class="grid grid-3">
         <div class="card">
-          <h3>18+ Years of Expertise</h3>
+          <h3>18+ Years of Experience</h3>
           <p>
-            With nearly two decades of experience, we understand monitor issues deeply and provide dependable repair solutions.
+            We bring nearly two decades of hands-on service knowledge to monitor diagnosis, repair, and maintenance.
           </p>
         </div>
-
         <div class="card">
           <h3>Official Supplier Parts</h3>
           <p>
-            We use parts from official suppliers to help ensure durability, proper compatibility, and long-term performance.
+            We focus on using parts from official suppliers to support better compatibility, performance, and reliability.
           </p>
         </div>
-
         <div class="card">
-          <h3>Trusted Local Service</h3>
+          <h3>Trusted Local Support</h3>
           <p>
-            Based in Coimbatore, we focus on honest communication, quick response, and quality service you can rely on.
+            Based in Peelamedu, Coimbatore, we offer approachable service, quick communication, and professional handling.
           </p>
         </div>
       </div>
@@ -546,81 +739,112 @@
         </div>
         <div class="stat">
           <h4>9:10 AM</h4>
-          <p>Opening Time</p>
+          <p>Opens Daily</p>
         </div>
         <div class="stat">
           <h4>7:30 PM</h4>
-          <p>Closing Time</p>
+          <p>Available Till</p>
         </div>
         <div class="stat">
-          <h4>100%</h4>
-          <p>Official Supplier Parts Focus</p>
+          <h4>Local</h4>
+          <p>Coimbatore Service</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" style="background:#0f172a;">
+  <section id="services" style="background: rgba(255,255,255,0.02);">
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-subtitle">
-        Complete monitor care solutions for repair, parts replacement, and long-term performance.
-      </p>
-
-      <div class="grid three-col">
-        <div class="card">
-          <h3>Monitor Repair</h3>
-          <p>
-            Professional diagnosis and repair for display issues, screen faults, power problems, and internal hardware issues.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Parts Replacement</h3>
-          <p>
-            Replacement of faulty components using trusted parts sourced from official suppliers whenever possible.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Preventive Maintenance</h3>
-          <p>
-            Maintenance services designed to improve reliability, reduce future problems, and extend product life.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Service Guidance</h3>
-          <p>
-            Clear support and practical advice so customers understand the issue, the repair process, and available solutions.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Business Support</h3>
-          <p>
-            Reliable service for offices, workspaces, and customers who need dependable monitor care with professional handling.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Fast Response</h3>
-          <p>
-            Reach us by call, email, or WhatsApp Business during working hours for quick communication and assistance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="container">
-      <div class="cta-box">
-        <h2>Need Monitor Service or Repair?</h2>
+      <div class="section-head">
+        <h2>Our Services</h2>
         <p>
-          Contact CNC Monitor Care today for trusted support, experienced service, and reliable parts from official suppliers.
+          Complete monitor care solutions for display issues, parts replacement, maintenance, and dependable support.
         </p>
-        <div class="btn-group" style="justify-content:center;">
+      </div>
+
+      <div class="split">
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Monitor Repair</h3>
+            <p>Professional repair for display problems, image issues, power faults, and internal hardware concerns.</p>
+          </div>
+          <div class="card">
+            <h3>Parts Replacement</h3>
+            <p>Replacement of faulty monitor components using trusted parts from official suppliers whenever possible.</p>
+          </div>
+          <div class="card">
+            <h3>Preventive Maintenance</h3>
+            <p>Maintenance services designed to improve performance, reduce failures, and extend monitor life.</p>
+          </div>
+          <div class="card">
+            <h3>Service Guidance</h3>
+            <p>Clear communication about issues, repair approach, and practical next steps for customers.</p>
+          </div>
+          <div class="card">
+            <h3>Office & Business Support</h3>
+            <p>Dependable service support for workspaces and businesses that need professional monitor care.</p>
+          </div>
+          <div class="card">
+            <h3>Fast Contact Support</h3>
+            <p>Call, email, or WhatsApp us during working hours for quick updates and service inquiries.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <h3>Professional Service That Builds Confidence</h3>
+          <p>
+            We are not just fixing a screen. We are helping customers get back to work with trusted service,
+            reliable parts, and a strong focus on quality.
+          </p>
+          <div class="check-list">
+            <div class="check">Experienced diagnosis and repair support</div>
+            <div class="check">Official supplier parts focus</div>
+            <div class="check">Clear communication with customers</div>
+            <div class="check">Convenient contact through call and WhatsApp</div>
+            <div class="check">Local support in Coimbatore</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-head">
+        <h2>What Customers Appreciate</h2>
+        <p>
+          Strong communication, reliable service, and experienced repair work are what make customers come back.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="stars">★★★★★</div>
+          <p>Professional service and quick response. The issue was explained clearly and handled properly.</p>
+          <span class="reviewer">Local Customer</span>
+        </div>
+        <div class="card">
+          <div class="stars">★★★★★</div>
+          <p>Reliable monitor repair support with good communication throughout the process.</p>
+          <span class="reviewer">Business Client</span>
+        </div>
+        <div class="card">
+          <div class="stars">★★★★★</div>
+          <p>Trusted service, genuine guidance, and a very professional approach from start to finish.</p>
+          <span class="reviewer">Satisfied Customer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div class="inner">
+        <h2>Need Fast, Professional Monitor Service?</h2>
+        <p>
+          Contact CNC Monitor Care today for experienced support, official supplier parts focus, and trusted local service.
+        </p>
+        <div class="btn-row" style="justify-content:center;">
           <a href="tel:9043375600" class="btn btn-primary">Call 9043375600</a>
           <a href="https://wa.me/919043375600" target="_blank" class="btn btn-secondary">Chat on WhatsApp</a>
         </div>
@@ -628,44 +852,81 @@
     </div>
   </section>
 
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          A few quick answers to common customer questions.
+        </p>
+      </div>
+
+      <div class="faq-wrap">
+        <details open>
+          <summary>What types of monitor issues do you handle?</summary>
+          <p>We help with common monitor problems such as display faults, power issues, internal component problems, and parts replacement needs.</p>
+        </details>
+
+        <details>
+          <summary>Do you use genuine or trusted parts?</summary>
+          <p>We focus on using parts from official suppliers to support better reliability and proper compatibility wherever possible.</p>
+        </details>
+
+        <details>
+          <summary>What are your business hours?</summary>
+          <p>We are available from 9:10 AM to 7:30 PM.</p>
+        </details>
+
+        <details>
+          <summary>How can I contact CNC Monitor Care?</summary>
+          <p>You can call us at 9043375600, email cncmonitorcare@gmail.com, or message us on WhatsApp Business using the same number.</p>
+        </details>
+
+        <details>
+          <summary>Where are you located?</summary>
+          <p>We are located at No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-subtitle">
-        We are available during working hours to help with monitor repair and service inquiries.
-      </p>
+      <div class="section-head">
+        <h2>Contact & Location</h2>
+        <p>
+          Reach us quickly through phone, email, or WhatsApp Business.
+        </p>
+      </div>
 
-      <div class="grid two-col">
+      <div class="grid grid-2">
         <div class="contact-box">
           <h3>Business Information</h3>
           <div class="contact-line"><strong>Business Name:</strong> CNC Monitor Care</div>
           <div class="contact-line"><strong>Experience:</strong> Over 18 Years</div>
-          <div class="contact-line"><strong>Working Hours:</strong> 9:10 AM to 7:30 PM</div>
           <div class="contact-line"><strong>Phone:</strong> <a href="tel:9043375600">9043375600</a></div>
           <div class="contact-line"><strong>WhatsApp:</strong> <a href="https://wa.me/919043375600" target="_blank">9043375600</a></div>
           <div class="contact-line"><strong>Email:</strong> <a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a></div>
+          <div class="contact-line"><strong>Working Hours:</strong> 9:10 AM to 7:30 PM</div>
           <div class="contact-line"><strong>Address:</strong> No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04</div>
+
+          <div class="contact-mini">
+            <div class="mini">Fast response through call and WhatsApp Business.</div>
+            <div class="mini">Trusted local monitor service support in Coimbatore.</div>
+            <div class="mini">Professional communication and reliable repair guidance.</div>
+          </div>
         </div>
 
-        <div class="contact-box">
-          <h3>Why Work With Us</h3>
-          <div class="why-list">
-            <div class="why-item">
-              <strong>Experienced Service</strong>
-              Nearly two decades of practical repair knowledge.
-            </div>
-            <div class="why-item">
-              <strong>Trusted Parts</strong>
-              Focus on parts from official suppliers for better reliability.
-            </div>
-            <div class="why-item">
-              <strong>Easy Communication</strong>
-              Reach us by call, email, or WhatsApp Business.
-            </div>
-            <div class="why-item">
-              <strong>Local Support</strong>
-              Conveniently located in Peelamedu, Coimbatore.
-            </div>
+        <div class="map-box">
+          <h3>Find Us in Coimbatore</h3>
+          <p style="color:#cdd7e5;">Use the map below to view our location in Peelamedu.</p>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=No.68%2C%20Tirumagal%20Nagar%2C%20Peelamedu%2C%20Coimbatore%20-%2004&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="CNC Monitor Care Location">
+            </iframe>
           </div>
         </div>
       </div>
@@ -674,11 +935,41 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 CNC Monitor Care. All rights reserved.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="CNC Monitor Care Logo">
+          <p>
+            CNC Monitor Care provides trusted monitor repair and service in Coimbatore with over 18 years of experience and a strong focus on quality support.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <p><a href="#about">About</a></p>
+          <p><a href="#services">Services</a></p>
+          <p><a href="#reviews">Reviews</a></p>
+          <p><a href="#faq">FAQ</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:9043375600">9043375600</a></p>
+          <p><a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a></p>
+          <p>No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04</p>
+          <p>9:10 AM to 7:30 PM</p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © 2026 CNC Monitor Care. All rights reserved.
+      </div>
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/919043375600" target="_blank">WhatsApp</a>
-
+  <div class="float-wrap">
+    <a class="float-btn float-call" href="tel:9043375600">Call Now</a>
+    <a class="float-btn float-whatsapp" href="https://wa.me/919043375600" target="_blank">WhatsApp</a>
+  </div>
 </body>
 </html>
