@@ -1,975 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CNC Monitor Care | Professional Monitor Repair in Coimbatore</title>
-  <meta name="description" content="CNC Monitor Care offers professional monitor repair and service in Coimbatore with over 18 years of experience, official supplier parts, WhatsApp support, and trusted local service." />
-  <meta name="keywords" content="CNC Monitor Care, monitor repair Coimbatore, monitor service Peelamedu, display repair, monitor technician, official supplier parts" />
-  <meta name="theme-color" content="#0b1220" />
-  <style>
-    :root {
-      --bg: #08111f;
-      --bg-soft: #0f172a;
-      --card: #111827;
-      --card-2: #162033;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --line: rgba(255,255,255,0.08);
-      --blue: #3b82f6;
-      --blue-2: #60a5fa;
-      --green: #25d366;
-      --white: #ffffff;
-      --shadow: 0 20px 60px rgba(0,0,0,0.35);
-      --radius: 22px;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
+  <title>CNC Monitor Care | CNC & Monitor Repair in Coimbatore</title>
+  <meta name="description" content="Need monitor repair or CNC electronics support in Coimbatore? CNC Monitor Care brings 18+ years of experience for reliable repairs. Call or WhatsApp now."/>
+  <meta name="keywords" content="monitor repair Coimbatore, display repair Coimbatore, monitor service near me, CNC repair Coimbatore, CNC Monitor Care"/>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(59,130,246,0.15), transparent 28%),
-        linear-gradient(180deg, #07101d 0%, #0a1322 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
+  <meta property="og:title" content="CNC Monitor Care | CNC & Monitor Repair in Coimbatore"/>
+  <meta property="og:description" content="18+ years of reliable CNC and monitor repair in Coimbatore. Call or WhatsApp for quick help."/>
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(92%, 1180px);
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(7, 12, 24, 0.88);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
-
-    nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .brand img {
-      width: 168px;
-      border-radius: 12px;
-      background: #fff;
-      padding: 6px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-    }
-
-    .brand-copy strong {
-      display: block;
-      color: var(--white);
-      letter-spacing: 0.3px;
-    }
-
-    .brand-copy span {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: #dbeafe;
-      font-weight: 700;
-      font-size: 0.96rem;
-      transition: 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--blue-2);
-    }
-
-    .hero {
-      position: relative;
-      min-height: 92vh;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(rgba(6, 11, 21, 0.78), rgba(6, 11, 21, 0.92)),
-        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      z-index: -2;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at left top, rgba(96,165,250,0.18), transparent 28%);
-      z-index: -1;
-    }
-
-    .hero-wrap {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 34px;
-      padding: 72px 0;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 18px;
-      background: rgba(59,130,246,0.12);
-      border: 1px solid rgba(96,165,250,0.25);
-      color: #dbeafe;
-      padding: 9px 14px;
-      border-radius: 999px;
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 4.5vw, 4rem);
-      line-height: 1.08;
-      margin-bottom: 18px;
-      color: var(--white);
-    }
-
-    .hero h1 span {
-      color: var(--blue-2);
-    }
-
-    .hero p {
-      color: #d4dbe7;
-      font-size: 1.08rem;
-      max-width: 720px;
-      margin-bottom: 24px;
-    }
-
-    .trust-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 28px;
-    }
-
-    .chip {
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: #e0ecff;
-      font-weight: 700;
-      font-size: 0.94rem;
-    }
-
-    .btn-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 160px;
-      padding: 15px 24px;
-      border-radius: 14px;
-      font-weight: 800;
-      transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      color: #fff;
-      background: linear-gradient(135deg, var(--blue), var(--blue-2));
-      box-shadow: 0 12px 30px rgba(37,99,235,0.3);
-    }
-
-    .btn-secondary {
-      color: #fff;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .hero-side {
-      background: linear-gradient(180deg, rgba(22,32,51,0.97), rgba(10,18,34,0.96));
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .panel-title {
-      font-size: 1.4rem;
-      color: var(--white);
-      margin-bottom: 18px;
-    }
-
-    .panel-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .panel-item {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 16px;
-      padding: 16px;
-    }
-
-    .panel-item strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--blue-2);
-    }
-
-    .panel-item span,
-    .panel-item a {
-      color: #dbeafe;
-      word-break: break-word;
-    }
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-head {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .section-head h2 {
-      font-size: clamp(1.9rem, 3vw, 2.7rem);
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-
-    .section-head p {
-      max-width: 760px;
-      margin: 0 auto;
-      color: var(--muted);
-    }
-
-    .grid {
-      display: grid;
-      gap: 24px;
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .grid-2 {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    .card {
-      background: linear-gradient(180deg, var(--card), var(--card-2));
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 28px;
-      transition: 0.25s ease;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(96,165,250,0.35);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.28);
-    }
-
-    .card h3 {
-      color: var(--white);
-      margin-bottom: 12px;
-      font-size: 1.18rem;
-    }
-
-    .card p {
-      color: #d0d8e6;
-    }
-
-    .stats {
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 18px;
-    }
-
-    .stat {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      text-align: center;
-      padding: 24px;
-    }
-
-    .stat h4 {
-      color: var(--blue-2);
-      font-size: 2rem;
-      margin-bottom: 4px;
-    }
-
-    .stat p {
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .highlight-box {
-      height: 100%;
-      background: linear-gradient(135deg, rgba(37,99,235,0.16), rgba(15,23,42,0.95));
-      border: 1px solid rgba(96,165,250,0.2);
-      border-radius: 24px;
-      padding: 30px;
-      box-shadow: var(--shadow);
-    }
-
-    .highlight-box h3 {
-      font-size: 1.6rem;
-      color: var(--white);
-      margin-bottom: 14px;
-    }
-
-    .highlight-box p {
-      color: #d8e0ec;
-      margin-bottom: 18px;
-    }
-
-    .check-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .check {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 14px;
-      padding: 14px 16px;
-      color: #e5edf9;
-      font-weight: 700;
-    }
-
-    .reviews .card {
-      position: relative;
-    }
-
-    .stars {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-      color: #fbbf24;
-      letter-spacing: 2px;
-    }
-
-    .reviewer {
-      display: block;
-      margin-top: 14px;
-      color: var(--blue-2);
-      font-weight: 800;
-      font-size: 0.95rem;
-    }
-
-    .faq-wrap {
-      display: grid;
-      gap: 16px;
-    }
-
-    details {
-      background: linear-gradient(180deg, #101827, #121d30);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 18px 20px;
-    }
-
-    summary {
-      cursor: pointer;
-      list-style: none;
-      color: var(--white);
-      font-weight: 800;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details p {
-      margin-top: 12px;
-      color: #d4dbe7;
-    }
-
-    .cta-band {
-      background: linear-gradient(135deg, #1d4ed8, #2563eb, #0f172a);
-      border-top: 1px solid rgba(255,255,255,0.08);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .cta-band .inner {
-      text-align: center;
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .cta-band h2 {
-      color: var(--white);
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
-      margin-bottom: 12px;
-    }
-
-    .cta-band p {
-      color: #dbeafe;
-      margin-bottom: 24px;
-    }
-
-    .contact-box,
-    .map-box {
-      background: linear-gradient(180deg, var(--card), var(--card-2));
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
-    }
-
-    .contact-box h3,
-    .map-box h3 {
-      color: var(--white);
-      margin-bottom: 16px;
-      font-size: 1.35rem;
-    }
-
-    .contact-line {
-      margin-bottom: 12px;
-      color: #d7dfec;
-    }
-
-    .contact-line a {
-      color: #9cc9ff;
-      font-weight: 700;
-    }
-
-    .contact-mini {
-      display: grid;
-      gap: 14px;
-      margin-top: 18px;
-    }
-
-    .mini {
-      padding: 14px 16px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.05);
-      color: #dce6f4;
-    }
-
-    .map-frame {
-      margin-top: 14px;
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      min-height: 320px;
-    }
-
-    .map-frame iframe {
-      width: 100%;
-      height: 320px;
-      border: 0;
-      display: block;
-    }
-
-    footer {
-      padding: 38px 0 28px;
-      border-top: 1px solid var(--line);
-      background: rgba(4, 9, 17, 0.92);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr 0.8fr;
-      gap: 24px;
-    }
-
-    .footer-brand img {
-      width: 170px;
-      border-radius: 10px;
-      background: #fff;
-      padding: 6px;
-      margin-bottom: 12px;
-    }
-
-    .footer-brand p,
-    .footer-col p,
-    .footer-col a {
-      color: var(--muted);
-    }
-
-    .footer-col h4 {
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-
-    .copyright {
-      margin-top: 26px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .float-wrap {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      display: grid;
-      gap: 10px;
-      z-index: 1200;
-    }
-
-    .float-btn {
-      padding: 14px 18px;
-      border-radius: 999px;
-      font-weight: 800;
-      color: #fff;
-      box-shadow: 0 14px 32px rgba(0,0,0,0.28);
-    }
-
-    .float-call {
-      background: linear-gradient(135deg, var(--blue), var(--blue-2));
-    }
-
-    .float-whatsapp {
-      background: var(--green);
-    }
-
-    @media (max-width: 980px) {
-      .hero-wrap,
-      .split,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      nav {
-        padding: 14px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .brand {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .brand img {
-        width: 150px;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .float-wrap {
-        right: 12px;
-        bottom: 12px;
-      }
-
-      .float-btn {
-        padding: 12px 16px;
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">
-          <img src="logo.jpg" alt="CNC Monitor Care Logo">
-          <div class="brand-copy">
-            <strong>CNC Monitor Care</strong>
-            <span>Professional Monitor Repair Experts in Coimbatore</span>
-          </div>
-        </div>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CNC Monitor Care home">
+        <img src="logo.jpg" alt="CNC Monitor Care logo">
+        <div>
+          <strong>CNC Monitor Care</strong>
+          <span>CNC & Monitor Repair, Coimbatore</span>
         </div>
+      </a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="primary-navigation" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" data-primary-nav>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
+      <div class="header-ctas" aria-label="Quick actions">
+        <a class="btn btn-ghost" href="tel:9043375600">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 4H4a1 1 0 0 0-1 1c0 10.5 9.5 20 20 20a1 1 0 0 0 1-1v-3a1 1 0 0 0-.8-1l-3.2-.8a1 1 0 0 0-1 .3l-1.2 1.2a16 16 0 0 1-6.1-6.1L8.2 8a1 1 0 0 0 .3-1L7.7 4.8A1 1 0 0 0 7 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Call
+        </a>
+        <a class="btn btn-green" href="https://wa.me/919043375600?text=Hi%2C%20I%20need%20monitor%20repair%20service" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 11.5c0 4.7-4 8.5-8.9 8.5-1.4 0-2.7-.3-3.9-.8L4 20l.9-2.9c-.6-1.1-1-2.4-1-3.7C3.9 8.7 7.8 5 12 5c4.4 0 8 3.4 8 6.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.2 9.3c.3-1 1.2-1 1.6-.4.4.7.9 1.2.8 1.8-.1.6-.9.8-.6 1.5.3.7 1.2 1.5 1.9 1.8.7.3.9-.5 1.5-.6.6-.1 1.1.4 1.8.8.6.4.6 1.3-.4 1.6-.9.3-2.5.1-4.2-1.6s-2-3.3-1.6-4.3Z" fill="currentColor"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-wrap">
-        <div>
-          <div class="eyebrow">Trusted local service • 18+ years of experience</div>
-          <h1>Professional <span>Monitor Repair & Service</span> for Homes, Offices, and Businesses</h1>
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-panel">
+          <div class="kicker"><span class="dot" aria-hidden="true"></span>18+ years • Peelamedu, Coimbatore</div>
+          <h1>Expert <span>CNC & Monitor Repair</span> Services</h1>
           <p>
-            CNC Monitor Care delivers trusted monitor diagnosis, repair, maintenance, and parts replacement in Coimbatore.
-            We use parts from official suppliers and focus on reliable service, clear communication, and professional support.
+            Fast, reliable repairs for monitor displays and CNC electronics. Call or WhatsApp for urgent support
+            and we'll guide you to the right next step.
           </p>
-
-          <div class="trust-row">
-            <div class="chip">18+ Years Experience</div>
-            <div class="chip">Official Supplier Parts</div>
-            <div class="chip">WhatsApp Business</div>
-            <div class="chip">Peelamedu, Coimbatore</div>
-          </div>
-
-          <div class="btn-row">
-            <a href="tel:9043375600" class="btn btn-primary">Call Now</a>
-            <a href="https://wa.me/919043375600" target="_blank" class="btn btn-secondary">WhatsApp Us</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:9043375600">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7 4H4a1 1 0 0 0-1 1c0 10.5 9.5 20 20 20a1 1 0 0 0 1-1v-3a1 1 0 0 0-.8-1l-3.2-.8a1 1 0 0 0-1 .3l-1.2 1.2a16 16 0 0 1-6.1-6.1L8.2 8a1 1 0 0 0 .3-1L7.7 4.8A1 1 0 0 0 7 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Call Now
+            </a>
+            <a class="btn btn-green" href="https://wa.me/919043375600?text=Hi%2C%20I%20need%20monitor%20repair%20service" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 11.5c0 4.7-4 8.5-8.9 8.5-1.4 0-2.7-.3-3.9-.8L4 20l.9-2.9c-.6-1.1-1-2.4-1-3.7C3.9 8.7 7.8 5 12 5c4.4 0 8 3.4 8 6.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              WhatsApp
+            </a>
           </div>
         </div>
 
-        <div class="hero-side">
-          <h3 class="panel-title">Quick Business Info</h3>
-          <div class="panel-grid">
-            <div class="panel-item">
-              <strong>Phone</strong>
-              <a href="tel:9043375600">9043375600</a>
-            </div>
-            <div class="panel-item">
-              <strong>WhatsApp</strong>
-              <a href="https://wa.me/919043375600" target="_blank">Chat on WhatsApp Business</a>
-            </div>
-            <div class="panel-item">
-              <strong>Email</strong>
-              <a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a>
-            </div>
-            <div class="panel-item">
-              <strong>Working Hours</strong>
-              <span>9:10 AM to 7:30 PM</span>
-            </div>
-            <div class="panel-item">
-              <strong>Address</strong>
-              <span>No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04</span>
+        <aside class="hero-side" aria-label="At a glance">
+          <div class="stat-card">
+            <div class="stat-top">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2 2 7l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <strong>Reliable repairs</strong>
+                <p>Quality workmanship aimed at stable operation and dependable display output.</p>
+              </div>
             </div>
           </div>
+          <div class="stat-card">
+            <div class="stat-top">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 21s7-4.4 7-10.3C19 6.1 16.4 3 12 3S5 6.1 5 10.7C5 16.6 12 21 12 21Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9.5 10h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <strong>Local trust</strong>
+                <p>Coimbatore customers rely on us for CNC repair and monitor service.</p>
+              </div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-top">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>Fast response</strong>
+                <p>Reach us quickly with phone or WhatsApp for urgent breakdowns.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Services that reduce downtime</h2>
+        <p class="section-subtitle">
+          Choose the service you need. If your issue is unclear, send details on WhatsApp and we'll help you identify the right repair path.
+        </p>
+
+        <div class="grid cards-3">
+          <div class="card">
+            <div class="tag">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3 7h18v10H3z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              CNC Machine Repair
+            </div>
+            <h3>Stable machine performance</h3>
+            <p>Repair and service support for CNC units and operational problems.</p>
+          </div>
+
+          <div class="card">
+            <div class="tag">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Monitor Repair
+            </div>
+            <h3>Display fixes that last</h3>
+            <p>Backlight, panel, and display stability support for everyday use.</p>
+          </div>
+
+          <div class="card">
+            <div class="tag">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 10a9 9 0 1 1-18 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Spindle Repair
+            </div>
+            <h3>Maintenance and repair</h3>
+            <p>Support for spindle motor and related performance concerns.</p>
+          </div>
+
+          <div class="card">
+            <div class="tag">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 20h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Motherboard Repair
+            </div>
+            <h3>Industrial electronics support</h3>
+            <p>Board-level troubleshooting for reliable operation in the field.</p>
+          </div>
+
+          <div class="card">
+            <div class="tag">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+              Preventive Maintenance
+            </div>
+            <h3>Reduce unexpected failures</h3>
+            <p>Maintenance planning and checks to extend equipment life.</p>
+          </div>
+
+          <div class="card">
+            <div class="tag">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Industrial Support
+            </div>
+            <h3>Help for offices and businesses</h3>
+            <p>Reliable assistance for factories and organizations that need dependable repair service.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap">
+          <a class="btn btn-primary" href="services.html">View Services</a>
+          <a class="btn btn-ghost" href="contact.html">Contact for Diagnosis</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <div class="section-head">
-        <h2>Why Customers Choose CNC Monitor Care</h2>
-        <p>
-          Our business is built on experience, trusted sourcing, and dependable repair work that gives customers confidence.
-        </p>
+    <section id="reviews">
+      <div class="container">
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-subtitle">A few examples of what customers appreciate about our repair support.</p>
+
+        <div class="grid cards-3">
+          <div class="card">
+            <div class="tag">Monitor Repair</div>
+            <div class="stars" aria-label="5 star rating">
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+            </div>
+            <div class="review-quote">"The display issue was diagnosed quickly, and the repair restored stable output. Communication was clear throughout."</div>
+            <div class="review-by">— Local customer, Coimbatore</div>
+          </div>
+
+          <div class="card">
+            <div class="tag">CNC Service</div>
+            <div class="stars" aria-label="5 star rating">
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+            </div>
+            <div class="review-quote">"They understood our urgent requirement and helped us get back to production with dependable support."</div>
+            <div class="review-by">— Office client, Coimbatore</div>
+          </div>
+
+          <div class="card">
+            <div class="tag">Electronics Support</div>
+            <div class="stars" aria-label="5 star rating">
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.1 6.7 7.3 1.1-5.3 5.2 1.3 7.3L12 19.9 5.6 22.3 7 15l-5.3-5.2 7.3-1.1L12 2Z"/></svg>
+            </div>
+            <div class="review-quote">"They provided practical guidance and resolved the electronics issue reliably. We appreciated the professionalism."</div>
+            <div class="review-by">— Business customer, Peelamedu</div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>18+ Years of Experience</h3>
-          <p>
-            We bring nearly two decades of hands-on service knowledge to monitor diagnosis, repair, and maintenance.
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-subtitle">Quick answers for customers searching monitor repair in Coimbatore.</p>
+
+        <div class="accordion" role="region" aria-label="Frequently Asked Questions">
+          <div class="accordion-item" data-accordion-item data-open="true">
+            <button class="accordion-button" type="button" data-accordion-button aria-expanded="true">
+              Do you repair CNC monitors and displays?
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              Yes. We handle common monitor and display issues such as no display, flicker, unstable output, and related faults that affect operation.
+            </div>
+          </div>
+
+          <div class="accordion-item" data-accordion-item>
+            <button class="accordion-button" type="button" data-accordion-button aria-expanded="false">
+              How do I get a quick diagnosis?
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              Call or WhatsApp with your symptoms (photos/videos help). We'll ask a few questions and guide you on the next step.
+            </div>
+          </div>
+
+          <div class="accordion-item" data-accordion-item>
+            <button class="accordion-button" type="button" data-accordion-button aria-expanded="false">
+              Do you support business and office requirements?
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              Yes. We serve offices and businesses that need dependable repair support to reduce downtime.
+            </div>
+          </div>
+
+          <div class="accordion-item" data-accordion-item>
+            <button class="accordion-button" type="button" data-accordion-button aria-expanded="false">
+              What should I share before sending the unit?
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              If available: model/type, when the issue started, and what changed (no display, flicker, error behavior, etc.).
+            </div>
+          </div>
+
+          <div class="accordion-item" data-accordion-item>
+            <button class="accordion-button" type="button" data-accordion-button aria-expanded="false">
+              Where are you located?
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              We're based in Peelamedu, Coimbatore, and support customers across the local area.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:18px">
+      <div class="container">
+        <div class="card" style="padding:22px">
+          <h2 class="section-title" style="margin-bottom:10px">Need help right now?</h2>
+          <p class="section-subtitle" style="margin-bottom:16px; max-width:80ch">
+            Call or WhatsApp and describe the issue. For faster handling, you can also use the Contact page form (it opens WhatsApp with your message).
           </p>
-        </div>
-        <div class="card">
-          <h3>Official Supplier Parts</h3>
-          <p>
-            We focus on using parts from official suppliers to support better compatibility, performance, and reliability.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Trusted Local Support</h3>
-          <p>
-            Based in Peelamedu, Coimbatore, we offer approachable service, quick communication, and professional handling.
-          </p>
-        </div>
-      </div>
-
-      <div class="stats">
-        <div class="stat">
-          <h4>18+</h4>
-          <p>Years Experience</p>
-        </div>
-        <div class="stat">
-          <h4>9:10 AM</h4>
-          <p>Opens Daily</p>
-        </div>
-        <div class="stat">
-          <h4>7:30 PM</h4>
-          <p>Available Till</p>
-        </div>
-        <div class="stat">
-          <h4>Local</h4>
-          <p>Coimbatore Service</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" style="background: rgba(255,255,255,0.02);">
-    <div class="container">
-      <div class="section-head">
-        <h2>Our Services</h2>
-        <p>
-          Complete monitor care solutions for display issues, parts replacement, maintenance, and dependable support.
-        </p>
-      </div>
-
-      <div class="split">
-        <div class="grid grid-3">
-          <div class="card">
-            <h3>Monitor Repair</h3>
-            <p>Professional repair for display problems, image issues, power faults, and internal hardware concerns.</p>
-          </div>
-          <div class="card">
-            <h3>Parts Replacement</h3>
-            <p>Replacement of faulty monitor components using trusted parts from official suppliers whenever possible.</p>
-          </div>
-          <div class="card">
-            <h3>Preventive Maintenance</h3>
-            <p>Maintenance services designed to improve performance, reduce failures, and extend monitor life.</p>
-          </div>
-          <div class="card">
-            <h3>Service Guidance</h3>
-            <p>Clear communication about issues, repair approach, and practical next steps for customers.</p>
-          </div>
-          <div class="card">
-            <h3>Office & Business Support</h3>
-            <p>Dependable service support for workspaces and businesses that need professional monitor care.</p>
-          </div>
-          <div class="card">
-            <h3>Fast Contact Support</h3>
-            <p>Call, email, or WhatsApp us during working hours for quick updates and service inquiries.</p>
-          </div>
-        </div>
-
-        <div class="highlight-box">
-          <h3>Professional Service That Builds Confidence</h3>
-          <p>
-            We are not just fixing a screen. We are helping customers get back to work with trusted service,
-            reliable parts, and a strong focus on quality.
-          </p>
-          <div class="check-list">
-            <div class="check">Experienced diagnosis and repair support</div>
-            <div class="check">Official supplier parts focus</div>
-            <div class="check">Clear communication with customers</div>
-            <div class="check">Convenient contact through call and WhatsApp</div>
-            <div class="check">Local support in Coimbatore</div>
+          <div class="hero-actions" style="justify-content:center">
+            <a class="btn btn-primary" href="tel:9043375600">Call Now</a>
+            <a class="btn btn-green" href="https://wa.me/919043375600?text=Hi%2C%20I%20need%20monitor%20repair%20service" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-ghost" href="contact.html">Send Inquiry</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="reviews" class="reviews">
-    <div class="container">
-      <div class="section-head">
-        <h2>What Customers Appreciate</h2>
-        <p>
-          Strong communication, reliable service, and experienced repair work are what make customers come back.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="stars">★★★★★</div>
-          <p>Professional service and quick response. The issue was explained clearly and handled properly.</p>
-          <span class="reviewer">Local Customer</span>
-        </div>
-        <div class="card">
-          <div class="stars">★★★★★</div>
-          <p>Reliable monitor repair support with good communication throughout the process.</p>
-          <span class="reviewer">Business Client</span>
-        </div>
-        <div class="card">
-          <div class="stars">★★★★★</div>
-          <p>Trusted service, genuine guidance, and a very professional approach from start to finish.</p>
-          <span class="reviewer">Satisfied Customer</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="container">
-      <div class="inner">
-        <h2>Need Fast, Professional Monitor Service?</h2>
-        <p>
-          Contact CNC Monitor Care today for experienced support, official supplier parts focus, and trusted local service.
-        </p>
-        <div class="btn-row" style="justify-content:center;">
-          <a href="tel:9043375600" class="btn btn-primary">Call 9043375600</a>
-          <a href="https://wa.me/919043375600" target="_blank" class="btn btn-secondary">Chat on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="container">
-      <div class="section-head">
-        <h2>Frequently Asked Questions</h2>
-        <p>
-          A few quick answers to common customer questions.
-        </p>
-      </div>
-
-      <div class="faq-wrap">
-        <details open>
-          <summary>What types of monitor issues do you handle?</summary>
-          <p>We help with common monitor problems such as display faults, power issues, internal component problems, and parts replacement needs.</p>
-        </details>
-
-        <details>
-          <summary>Do you use genuine or trusted parts?</summary>
-          <p>We focus on using parts from official suppliers to support better reliability and proper compatibility wherever possible.</p>
-        </details>
-
-        <details>
-          <summary>What are your business hours?</summary>
-          <p>We are available from 9:10 AM to 7:30 PM.</p>
-        </details>
-
-        <details>
-          <summary>How can I contact CNC Monitor Care?</summary>
-          <p>You can call us at 9043375600, email cncmonitorcare@gmail.com, or message us on WhatsApp Business using the same number.</p>
-        </details>
-
-        <details>
-          <summary>Where are you located?</summary>
-          <p>We are located at No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Contact & Location</h2>
-        <p>
-          Reach us quickly through phone, email, or WhatsApp Business.
-        </p>
-      </div>
-
-      <div class="grid grid-2">
-        <div class="contact-box">
-          <h3>Business Information</h3>
-          <div class="contact-line"><strong>Business Name:</strong> CNC Monitor Care</div>
-          <div class="contact-line"><strong>Experience:</strong> Over 18 Years</div>
-          <div class="contact-line"><strong>Phone:</strong> <a href="tel:9043375600">9043375600</a></div>
-          <div class="contact-line"><strong>WhatsApp:</strong> <a href="https://wa.me/919043375600" target="_blank">9043375600</a></div>
-          <div class="contact-line"><strong>Email:</strong> <a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a></div>
-          <div class="contact-line"><strong>Working Hours:</strong> 9:10 AM to 7:30 PM</div>
-          <div class="contact-line"><strong>Address:</strong> No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04</div>
-
-          <div class="contact-mini">
-            <div class="mini">Fast response through call and WhatsApp Business.</div>
-            <div class="mini">Trusted local monitor service support in Coimbatore.</div>
-            <div class="mini">Professional communication and reliable repair guidance.</div>
-          </div>
-        </div>
-
-        <div class="map-box">
-          <h3>Find Us in Coimbatore</h3>
-          <p style="color:#cdd7e5;">Use the map below to view our location in Peelamedu.</p>
-          <div class="map-frame">
-            <iframe
-              src="https://www.google.com/maps?q=No.68%2C%20Tirumagal%20Nagar%2C%20Peelamedu%2C%20Coimbatore%20-%2004&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="CNC Monitor Care Location">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="logo.jpg" alt="CNC Monitor Care Logo">
-          <p>
-            CNC Monitor Care provides trusted monitor repair and service in Coimbatore with over 18 years of experience and a strong focus on quality support.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <p><a href="#about">About</a></p>
-          <p><a href="#services">Services</a></p>
-          <p><a href="#reviews">Reviews</a></p>
-          <p><a href="#faq">FAQ</a></p>
-          <p><a href="#contact">Contact</a></p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <p><a href="tel:9043375600">9043375600</a></p>
-          <p><a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a></p>
-          <p>No.68, Tirumagal Nagar, Peelamedu, Coimbatore - 04</p>
-          <p>9:10 AM to 7:30 PM</p>
-        </div>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>CNC Monitor Care</strong>
+        <p>
+          Peelamedu, Coimbatore, India<br>
+          Phone / WhatsApp: <a href="tel:9043375600">9043375600</a><br>
+          Hours: 9:00 AM - 7:30 PM<br>
+          Email: <a href="mailto:cncmonitorcare@gmail.com">cncmonitorcare@gmail.com</a>
+        </p>
       </div>
-
-      <div class="copyright">
-        © 2026 CNC Monitor Care. All rights reserved.
+      <div class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
+    </div>
+    <div class="container" style="margin-top:18px; color:var(--muted); font-size:13px; font-weight:800;">
+      © <span data-year></span> CNC Monitor Care | Coimbatore
     </div>
   </footer>
 
-  <div class="float-wrap">
-    <a class="float-btn float-call" href="tel:9043375600">Call Now</a>
-    <a class="float-btn float-whatsapp" href="https://wa.me/919043375600" target="_blank">WhatsApp</a>
+  <div class="fab" aria-label="Quick contact">
+    <a class="call" href="tel:9043375600" aria-label="Call CNC Monitor Care">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M7 4H4a1 1 0 0 0-1 1c0 10.5 9.5 20 20 20a1 1 0 0 0 1-1v-3a1 1 0 0 0-.8-1l-3.2-.8a1 1 0 0 0-1 .3l-1.2 1.2a16 16 0 0 1-6.1-6.1L8.2 8a1 1 0 0 0 .3-1L7.7 4.8A1 1 0 0 0 7 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <a class="whatsapp" href="https://wa.me/919043375600?text=Hi%2C%20I%20need%20monitor%20repair%20service" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp CNC Monitor Care">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 11.5c0 4.7-4 8.5-8.9 8.5-1.4 0-2.7-.3-3.9-.8L4 20l.9-2.9c-.6-1.1-1-2.4-1-3.7C3.9 8.7 7.8 5 12 5c4.4 0 8 3.4 8 6.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CNC Monitor Care | CNC & Monitor Repair in Coimbatore</title>
+
+<meta name="description" content="CNC Monitor Care provides expert CNC machine repair, monitor service, spindle repair, and industrial electronics maintenance in Coimbatore. 20+ years experience."/>
+<meta name="keywords" content="CNC repair Coimbatore, CNC Monitor Care, spindle repair, CNC service Tamil Nadu, monitor repair Peelamedu"/>
+
+<style>
+:root{
+  --bg:#0a0f1c;
+  --card:#111827;
+  --blue:#2563eb;
+  --light:#dbeafe;
+  --text:#e5e7eb;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+body{background:var(--bg);color:var(--text);}
+
+.container{width:90%;max-width:1100px;margin:auto;}
+
+header{
+  position:sticky;top:0;
+  background:#0a0f1c;
+  border-bottom:1px solid #1f2937;
+  z-index:999;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+}
+
+nav img{height:45px;background:#fff;padding:5px;border-radius:8px;}
+
+nav a{
+  color:var(--light);
+  margin-left:20px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.hero{
+  padding:100px 0;
+  text-align:center;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1581091215367-59ab6b6c3b52?auto=format&fit=crop&w=1400&q=80') center/cover;
+}
+
+.hero h1{font-size:40px;margin-bottom:15px;}
+.hero span{color:var(--blue);}
+.hero p{max-width:700px;margin:auto;margin-bottom:25px;}
+
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:8px;
+  margin:5px;
+  font-weight:bold;
+}
+
+.btn-primary{background:var(--blue);color:white;}
+.btn-secondary{border:1px solid #fff;color:white;}
+
+section{padding:70px 0;}
+
+h2{text-align:center;margin-bottom:40px;}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:12px;
+}
+
+.card h3{margin-bottom:10px;color:var(--blue);}
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border:none;
+  border-radius:6px;
+}
+
+button{
+  background:var(--blue);
+  color:white;
+  padding:12px;
+  border:none;
+  width:100%;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid #1f2937;
+}
+
+.float{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+}
+
+.float a{
+  display:block;
+  margin-top:10px;
+  padding:12px;
+  border-radius:50px;
+  color:white;
+  font-weight:bold;
+}
+
+.call{background:#2563eb;}
+.whatsapp{background:#25d366;}
+
+@media(max-width:768px){
+  .contact{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+  <img src="logo.jpg">
+  <div>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Expert <span>CNC & Monitor Repair</span> Services</h1>
+<p>Over 20 years of experience in CNC machine repair, monitor service, spindle maintenance, and industrial electronics in Coimbatore.</p>
+<a href="tel:9043375600" class="btn btn-primary">Call Now</a>
+<a href="https://wa.me/919043375600" class="btn btn-secondary">WhatsApp</a>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>CNC Machine Repair</h3><p>Complete repair and servicing of CNC machines.</p></div>
+<div class="card"><h3>Monitor Repair</h3><p>Fix display, panel, and screen issues.</p></div>
+<div class="card"><h3>Spindle Repair</h3><p>Professional spindle motor maintenance.</p></div>
+<div class="card"><h3>Motherboard Repair</h3><p>Industrial electronics and board-level repair.</p></div>
+<div class="card"><h3>Preventive Maintenance</h3><p>Reduce downtime and extend machine life.</p></div>
+<div class="card"><h3>Industrial Support</h3><p>Reliable service for factories and businesses.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>About Us</h2>
+<p style="text-align:center;max-width:700px;margin:auto;">
+CNC Monitor Care is a trusted service provider in Coimbatore with over 20 years of experience in CNC repair and electronics service. We focus on quality repairs, genuine parts, and reliable customer support.
+</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Contact Us</h2>
+
+<div class="contact">
+<div>
+<h3>Get in Touch</h3>
+<p>📞 <a href="tel:9043375600">9043375600</a></p>
+<p>📍 Peelamedu, Coimbatore</p>
+<p>⏰ 9:00 AM – 7:30 PM</p>
+</div>
+
+<div>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 CNC Monitor Care | Coimbatore</p>
+</footer>
+
+<div class="float">
+<a href="tel:9043375600" class="call">Call</a>
+<a href="https://wa.me/919043375600" class="whatsapp">WhatsApp</a>
+</div>
+
 </body>
 </html>
