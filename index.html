@@ -12,92 +12,70 @@
             box-sizing: border-box;
         }
 
+        html,
         body {
-            background: #f4f7fc;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-        }
-
-        .brochure-wrapper {
-            max-width: 880px;
-            width: 100%;
-            background: #ffffff;
-            padding: 30px 30px 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-        }
-
-        .embed-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-top: 56.2225%;
-            padding-bottom: 0;
-            box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-            margin-top: 1.6em;
-            margin-bottom: 0.9em;
-            overflow: hidden;
-            border-radius: 8px;
-            will-change: transform;
-        }
-
-        .embed-container iframe {
-            position: absolute;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            background: #f4f7fc;
+        }
+
+        iframe {
+            position: fixed;
             top: 0;
             left: 0;
+            width: 100%;
+            height: 100%;
             border: none;
             padding: 0;
             margin: 0;
+            display: block;
         }
 
         .credit-link {
-            display: block;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #3d4f66;
-            margin-top: 8px;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(4px);
+            color: rgba(255, 255, 255, 0.85);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 0.75rem;
+            padding: 6px 14px;
+            border-radius: 20px;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: background 0.3s ease;
+            z-index: 999;
+            letter-spacing: 0.3px;
         }
 
         .credit-link:hover {
-            color: #e67e22;
+            background: rgba(0, 0, 0, 0.8);
         }
 
         .credit-link i {
             margin-right: 4px;
         }
-
-        @media (max-width: 600px) {
-            .brochure-wrapper {
-                padding: 16px;
-            }
-        }
     </style>
+
+    <!-- Font Awesome for the icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
 
-    <div class="brochure-wrapper">
-        <div class="embed-container">
-            <iframe loading="lazy"
-                src="https://www.canva.com/design/DAHUnWsSF8I/kmC6yRa2HUmikX5vXCfwMg/view?embed"
-                allowfullscreen="allowfullscreen" allow="fullscreen">
-            </iframe>
-        </div>
-        <a href="https://www.canva.com/design/DAHUnWsSF8I/kmC6yRa2HUmikX5vXCfwMg/view?utm_content=DAHUnWsSF8I&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-           target="_blank" rel="noopener" class="credit-link">
-            <i class="fas fa-external-link-alt"></i> Copy of Canva Code by Nikil .r
-        </a>
-    </div>
+    <!-- Fullscreen Canva Embed -->
+    <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAHUnWsSF8I/kmC6yRa2HUmikX5vXCfwMg/view?embed"
+        allowfullscreen="allowfullscreen"
+        allow="fullscreen">
+    </iframe>
 
-    <!-- Font Awesome for the credit link icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Credit link (required by Canva) – minimal & unobtrusive -->
+    <a href="https://www.canva.com/design/DAHUnWsSF8I/kmC6yRa2HUmikX5vXCfwMg/view?utm_content=DAHUnWsSF8I&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+       target="_blank" rel="noopener" class="credit-link">
+        <i class="fas fa-external-link-alt"></i> Copy of Canva Code by Nikil .r
+    </a>
 
 </body>
 </html>
