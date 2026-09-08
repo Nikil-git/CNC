@@ -30,34 +30,6 @@
             padding: 24px;
         }
 
-        /* ----- Header / Brand ----- */
-        .brand-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .brand-header .logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 14px;
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #0b2b4a;
-            text-decoration: none;
-        }
-
-        .brand-header .logo i {
-            font-size: 2.8rem;
-            color: #e67e22;
-        }
-
-        .brand-header .tagline {
-            color: #3d4f66;
-            font-size: 1rem;
-            margin-top: 4px;
-            letter-spacing: 0.3px;
-        }
-
         /* ----- Brochure Container ----- */
         .brochure-wrapper {
             max-width: 880px;
@@ -116,14 +88,11 @@
             margin-right: 4px;
         }
 
-        /* ----- Floating Buttons ----- */
+        /* ----- Floating Back-to-Top Button (only) ----- */
         .floating-btns {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
             z-index: 999;
         }
 
@@ -134,9 +103,9 @@
             width: 56px;
             height: 56px;
             border-radius: 50%;
-            background: #e67e22;
+            background: #0b2b4a;
             color: #fff;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
@@ -147,15 +116,6 @@
         .floating-btns a:hover {
             transform: scale(1.08);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
-        }
-
-        .floating-btns .whatsapp {
-            background: #25D366;
-        }
-
-        .floating-btns .top-btn {
-            background: #0b2b4a;
-            font-size: 1.5rem;
         }
 
         /* ----- Footer ----- */
@@ -173,39 +133,24 @@
 
         /* ----- Responsive ----- */
         @media (max-width: 600px) {
-            .brand-header .logo {
-                font-size: 1.6rem;
-            }
-            .brand-header .logo i {
-                font-size: 2rem;
-            }
             .brochure-wrapper {
                 padding: 16px;
-            }
-            .floating-btns {
-                bottom: 20px;
-                right: 20px;
             }
             .floating-btns a {
                 width: 48px;
                 height: 48px;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
+            }
+            .floating-btns {
+                bottom: 20px;
+                right: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- ===== BRAND HEADER ===== -->
-    <header class="brand-header">
-        <a href="#" class="logo">
-            <i class="fas fa-desktop"></i>
-            <span>CNC Monitor Care</span>
-        </a>
-        <div class="tagline">Your CNC repair specialists — view our brochure below</div>
-    </header>
-
-    <!-- ===== BROCHURE EMBED ===== -->
+    <!-- ===== BROCHURE EMBED (only) ===== -->
     <div class="brochure-wrapper">
         <div class="embed-container">
             <iframe loading="lazy"
@@ -224,10 +169,9 @@
         &copy; <span id="year"></span> CNC Monitor Care — Coimbatore
     </div>
 
-    <!-- ===== FLOATING BUTTONS ===== -->
+    <!-- ===== FLOATING BACK-TO-TOP BUTTON ===== -->
     <div class="floating-btns">
-        <a href="https://wa.me/919043375600" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="top-btn" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+        <a href="#" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
     </div>
 
     <!-- ===== JAVASCRIPT ===== -->
