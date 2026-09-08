@@ -73,6 +73,11 @@
       outline-offset: 3px;
     }
 
+    .canva-image:not([src]) {
+      background: linear-gradient(135deg, #26332e, #71807b 52%, #101714);
+      min-height: 3rem;
+    }
+
     .form-control {
       width: 100%;
       border: 1px solid #b9c1bd;
@@ -112,21 +117,25 @@
  </head>
  <body data-template-id="__page-root" class="w-full">
   <header data-template-id="site-header" class="canva-header sticky top-0 z-30 border-b border-white/10 bg-[#101714] text-white">
-   <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 sm:px-8"><a href="#top" class="focus-ring flex min-w-0 items-center gap-3 rounded-sm" aria-label="CNC Monitor Care home"> <span class="flex h-10 w-10 shrink-0 items-center justify-center border border-[#f3b31a] text-[#f3b31a]"> <img data-template-id="site-logo" loading="lazy" class="canva-image h-full w-full object-cover"> </span> <span class="min-w-0"> <span data-template-id="brand-name" class="canva-text block truncate font-bold tracking-[0.08em]"></span> <span data-template-id="brand-tagline" class="canva-text mono block text-[10px] uppercase tracking-[0.12em] text-[#b8c2bd]"></span> </span> </a>
-    <div class="flex items-center gap-3"><span data-template-id="header-location" class="canva-text hidden text-sm text-[#dce2df] md:block"></span> <a data-template-id="header-call-button" href="tel:+919043375600" class="canva-button focus-ring inline-flex items-center gap-2 rounded-sm px-4 py-2.5 font-semibold transition hover:brightness-110"> <i data-lucide="phone-call" aria-hidden="true" class="h-4 w-4"></i> <span data-template-id="header-call-label" class="canva-text"></span> </a>
+   <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 sm:px-8">
+    <a href="#top" class="focus-ring flex min-w-0 items-center gap-3 rounded-sm" aria-label="CNC Monitor Care home"> <span class="flex h-10 w-10 shrink-0 items-center justify-center border border-[#f3b31a] text-[#f3b31a]"> <img data-template-id="site-logo" loading="lazy" class="canva-image h-full w-full object-cover"> </span> <span class="min-w-0"> <span data-template-id="brand-name" class="canva-text block truncate font-bold tracking-[0.08em]">CNC MONITOR CARE</span> <span data-template-id="brand-tagline" class="canva-text mono block text-[10px] uppercase tracking-[0.12em] text-[#b8c2bd]">Service • Repair • Retrofit</span> </span> </a>
+    <div class="flex items-center gap-3">
+     <span data-template-id="header-location" class="canva-text hidden text-sm text-[#dce2df] md:block"></span> <a data-template-id="header-call-button" href="tel:+919043375600" class="canva-button focus-ring inline-flex items-center gap-2 rounded-sm bg-[#f3b31a] px-4 py-2.5 font-semibold text-[#101714] transition hover:brightness-110"> <i data-lucide="phone-call" aria-hidden="true" class="h-4 w-4"></i> <span data-template-id="header-call-label" class="canva-text">Call Now</span> </a>
     </div>
    </div>
   </header>
   <main id="top">
    <section data-template-id="hero-section" class="canva-banner industrial-grid relative isolate overflow-hidden">
-    <div class="hero-image-wrap absolute inset-0"><img data-template-id="hero-image" loading="lazy" class="canva-image h-full w-full object-cover">
+    <div class="hero-image-wrap absolute inset-0">
+     <img data-template-id="hero-image" loading="lazy" class="canva-image h-full w-full object-cover">
     </div>
     <div class="relative mx-auto grid min-h-[600px] max-w-7xl content-center px-5 py-20 sm:px-8 lg:min-h-[650px]">
      <div class="max-w-3xl text-white">
-      <p data-template-id="hero-eyebrow" class="canva-text mono reveal mb-5 text-xs font-bold uppercase tracking-[0.16em] text-[#f3b31a]"></p>
-      <h1 data-template-id="hero-title" class="canva-text reveal reveal-2 max-w-3xl font-bold leading-[1.04] tracking-[-0.04em]"></h1>
-      <p data-template-id="hero-description" class="canva-text reveal reveal-3 mt-6 max-w-2xl text-lg leading-relaxed text-[#e1e8e4]"></p>
-      <div class="reveal reveal-3 mt-9 flex flex-col gap-3 sm:flex-row"><a data-template-id="hero-request-button" href="#service-request" class="canva-button focus-ring inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3.5 font-semibold transition hover:brightness-110"> <i data-lucide="wrench" aria-hidden="true" class="h-5 w-5"></i> <span data-template-id="hero-request-label" class="canva-text"></span> </a> <a data-template-id="hero-phone-link" href="tel:+919043375600" class="canva-link focus-ring inline-flex items-center justify-center gap-2 rounded-sm border border-white/45 bg-white/5 px-5 py-3.5 font-semibold text-white transition hover:bg-white/15"> <i data-lucide="phone" aria-hidden="true" class="h-5 w-5"></i> <span data-template-id="hero-phone-label" class="canva-text"></span> </a>
+      <p data-template-id="hero-eyebrow" class="canva-text mono reveal mb-5 text-xs font-bold uppercase tracking-[0.16em] text-[#f3b31a]">Coimbatore's CNC Service Partner</p>
+      <h1 data-template-id="hero-title" class="canva-text reveal reveal-2 max-w-3xl font-bold leading-[1.04] tracking-[-0.04em]">Keep your machine moving.</h1>
+      <p data-template-id="hero-description" class="canva-text reveal reveal-3 mt-6 max-w-2xl text-lg leading-relaxed text-[#e1e8e4]">Fast, dependable repairs and upgrades for CNC machines, laser systems, industrial monitors, and electronics — at an affordable price.</p>
+      <div class="reveal reveal-3 mt-9 flex flex-col gap-3 sm:flex-row">
+       <a data-template-id="hero-request-button" href="#service-request" class="canva-button focus-ring inline-flex items-center justify-center gap-2 rounded-sm bg-[#f3b31a] px-5 py-3.5 font-semibold text-[#101714] transition hover:brightness-110"> <i data-lucide="wrench" aria-hidden="true" class="h-5 w-5"></i> <span data-template-id="hero-request-label" class="canva-text">Request Service</span> </a> <a data-template-id="hero-phone-link" href="tel:+919043375600" class="canva-link focus-ring inline-flex items-center justify-center gap-2 rounded-sm border border-white/45 bg-white/5 px-5 py-3.5 font-semibold text-white transition hover:bg-white/15"> <i data-lucide="phone" aria-hidden="true" class="h-5 w-5"></i> <span data-template-id="hero-phone-label" class="canva-text">90433 75600</span> </a>
       </div>
       <div class="mt-11 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3">
        <div data-template-id="hero-point-one" class="canva-tag border-l-2 border-[#f3b31a] bg-black/20 px-4 py-3 text-sm text-[#f7faf8]"></div>
@@ -144,25 +153,31 @@
       <p data-template-id="services-description" class="canva-text mt-4 leading-relaxed text-[#53605b]"></p>
      </div>
      <div class="mt-10 grid gap-6 md:grid-cols-3">
-      <article data-template-id="service-card-monitor" class="canva-card service-card overflow-hidden border border-[#d5d9d6] bg-white"><img data-template-id="service-image-monitor" loading="lazy" class="canva-image h-52 w-full object-cover">
+      <article data-template-id="service-card-monitor" class="canva-card service-card overflow-hidden border border-[#d5d9d6] bg-white">
+       <img data-template-id="service-image-monitor" loading="lazy" class="canva-image h-52 w-full object-cover">
        <div class="p-6">
-        <div class="mb-5 flex h-10 w-10 items-center justify-center bg-[#101714] text-[#f3b31a]"><i data-lucide="monitor-cog" aria-hidden="true" class="h-5 w-5"></i>
+        <div class="mb-5 flex h-10 w-10 items-center justify-center bg-[#101714] text-[#f3b31a]">
+         <i data-lucide="monitor-cog" aria-hidden="true" class="h-5 w-5"></i>
         </div>
         <h3 data-template-id="service-monitor-title" class="canva-text font-bold"></h3>
         <p data-template-id="service-monitor-description" class="canva-text mt-3 leading-relaxed text-[#53605b]"></p>
        </div>
       </article>
-      <article data-template-id="service-card-laser" class="canva-card service-card overflow-hidden border border-[#d5d9d6] bg-white"><img data-template-id="service-image-laser" loading="lazy" class="canva-image h-52 w-full object-cover">
+      <article data-template-id="service-card-laser" class="canva-card service-card overflow-hidden border border-[#d5d9d6] bg-white">
+       <img data-template-id="service-image-laser" loading="lazy" class="canva-image h-52 w-full object-cover">
        <div class="p-6">
-        <div class="mb-5 flex h-10 w-10 items-center justify-center bg-[#101714] text-[#f3b31a]"><i data-lucide="settings-2" aria-hidden="true" class="h-5 w-5"></i>
+        <div class="mb-5 flex h-10 w-10 items-center justify-center bg-[#101714] text-[#f3b31a]">
+         <i data-lucide="settings-2" aria-hidden="true" class="h-5 w-5"></i>
         </div>
         <h3 data-template-id="service-laser-title" class="canva-text font-bold"></h3>
         <p data-template-id="service-laser-description" class="canva-text mt-3 leading-relaxed text-[#53605b]"></p>
        </div>
       </article>
-      <article data-template-id="service-card-retrofit" class="canva-card service-card overflow-hidden border border-[#d5d9d6] bg-white"><img data-template-id="service-image-retrofit" loading="lazy" class="canva-image h-52 w-full object-cover">
+      <article data-template-id="service-card-retrofit" class="canva-card service-card overflow-hidden border border-[#d5d9d6] bg-white">
+       <img data-template-id="service-image-retrofit" loading="lazy" class="canva-image h-52 w-full object-cover">
        <div class="p-6">
-        <div class="mb-5 flex h-10 w-10 items-center justify-center bg-[#101714] text-[#f3b31a]"><i data-lucide="panel-top" aria-hidden="true" class="h-5 w-5"></i>
+        <div class="mb-5 flex h-10 w-10 items-center justify-center bg-[#101714] text-[#f3b31a]">
+         <i data-lucide="panel-top" aria-hidden="true" class="h-5 w-5"></i>
         </div>
         <h3 data-template-id="service-retrofit-title" class="canva-text font-bold"></h3>
         <p data-template-id="service-retrofit-description" class="canva-text mt-3 leading-relaxed text-[#53605b]"></p>
@@ -194,17 +209,20 @@
       <h2 data-template-id="contact-title" class="canva-text mt-3 font-bold leading-tight tracking-[-0.03em]"></h2>
       <p data-template-id="contact-description" class="canva-text mt-4 leading-relaxed text-[#53605b]"></p>
       <div class="mt-9 space-y-6 border-t border-[#bfc4be] pt-7">
-       <div class="flex gap-4"><i data-lucide="phone" aria-hidden="true" class="mt-1 h-5 w-5 shrink-0 text-[#7d5a00]"></i>
+       <div class="flex gap-4">
+        <i data-lucide="phone" aria-hidden="true" class="mt-1 h-5 w-5 shrink-0 text-[#7d5a00]"></i>
         <div>
          <p data-template-id="phone-label" class="canva-text text-sm font-semibold text-[#53605b]"></p><a data-template-id="phone-value" href="tel:+919043375600" class="canva-link focus-ring mt-1 inline-block font-bold underline decoration-[#f3b31a] decoration-2 underline-offset-4"></a>
         </div>
        </div>
-       <div class="flex gap-4"><i data-lucide="mail" aria-hidden="true" class="mt-1 h-5 w-5 shrink-0 text-[#7d5a00]"></i>
+       <div class="flex gap-4">
+        <i data-lucide="mail" aria-hidden="true" class="mt-1 h-5 w-5 shrink-0 text-[#7d5a00]"></i>
         <div>
          <p data-template-id="email-label" class="canva-text text-sm font-semibold text-[#53605b]"></p><a data-template-id="email-value" href="mailto:support@cncmonitorcare.com" class="canva-link focus-ring mt-1 inline-block break-all font-bold underline decoration-[#f3b31a] decoration-2 underline-offset-4"></a>
         </div>
        </div>
-       <div class="flex gap-4"><i data-lucide="map-pin" aria-hidden="true" class="mt-1 h-5 w-5 shrink-0 text-[#7d5a00]"></i>
+       <div class="flex gap-4">
+        <i data-lucide="map-pin" aria-hidden="true" class="mt-1 h-5 w-5 shrink-0 text-[#7d5a00]"></i>
         <div>
          <p data-template-id="location-label" class="canva-text text-sm font-semibold text-[#53605b]"></p>
          <p data-template-id="location-value" class="canva-text mt-1 font-bold"></p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.289926798724!2d76.9972282740931!3d11.016860289146914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85785df7f8c79%3A0x62c83ecee717de65!2sCnc%20Monitor%20Care!5e0!3m2!1sen!2sin" title="CNC Monitor Care location map" class="mt-5 h-56 w-full border-0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -218,20 +236,27 @@
       <p data-template-id="form-description" class="canva-text mt-4 leading-relaxed text-[#53605b]"></p>
       <form id="service-form" class="mt-8" novalidate>
        <div class="grid gap-5 sm:grid-cols-2">
-        <div><label data-template-id="name-label" class="canva-text mb-2 block text-sm font-semibold" for="name"></label> <input data-template-id="name-input" class="canva-input form-control" id="name" name="name" type="text" required autocomplete="name">
+        <div>
+         <label data-template-id="name-label" class="canva-text mb-2 block text-sm font-semibold" for="name"></label> <input data-template-id="name-input" class="canva-input form-control" id="name" name="name" type="text" required autocomplete="name">
         </div>
-        <div><label data-template-id="phone-input-label" class="canva-text mb-2 block text-sm font-semibold" for="phone"></label> <input data-template-id="phone-input" class="canva-input form-control" id="phone" name="phone" type="tel" required autocomplete="tel">
+        <div>
+         <label data-template-id="phone-input-label" class="canva-text mb-2 block text-sm font-semibold" for="phone"></label> <input data-template-id="phone-input" class="canva-input form-control" id="phone" name="phone" type="tel" required autocomplete="tel">
         </div>
-        <div><label data-template-id="email-input-label" class="canva-text mb-2 block text-sm font-semibold" for="email"></label> <input data-template-id="email-input" class="canva-input form-control" id="email" name="email" type="email" required autocomplete="email">
+        <div>
+         <label data-template-id="email-input-label" class="canva-text mb-2 block text-sm font-semibold" for="email"></label> <input data-template-id="email-input" class="canva-input form-control" id="email" name="email" type="email" required autocomplete="email">
         </div>
-        <div><label data-template-id="machine-label" class="canva-text mb-2 block text-sm font-semibold" for="machine-model"></label> <input data-template-id="machine-input" class="canva-input form-control" id="machine-model" name="machine_model" type="text" required>
+        <div>
+         <label data-template-id="machine-label" class="canva-text mb-2 block text-sm font-semibold" for="machine-model"></label> <input data-template-id="machine-input" class="canva-input form-control" id="machine-model" name="machine_model" type="text" required>
         </div>
        </div>
-       <div class="mt-5"><label data-template-id="service-label" class="canva-text mb-2 block text-sm font-semibold" for="service-required"></label> <select id="service-required" name="service_required" class="form-control" required> <option value="">Select a service</option> <option value="CNC monitor repair">CNC monitor repair</option> <option value="CNC machine service">CNC machine service</option> <option value="Laser machine service">Laser machine service</option> <option value="LCD retrofit / upgrade">LCD retrofit / upgrade</option> <option value="Industrial electronics repair">Industrial electronics repair</option> <option value="Other service">Other service</option> </select>
+       <div class="mt-5">
+        <label data-template-id="service-label" class="canva-text mb-2 block text-sm font-semibold" for="service-required"></label> <select id="service-required" name="service_required" class="form-control" required> <option value="">Select a service</option> <option value="CNC monitor repair">CNC monitor repair</option> <option value="CNC machine service">CNC machine service</option> <option value="Laser machine service">Laser machine service</option> <option value="LCD retrofit / upgrade">LCD retrofit / upgrade</option> <option value="Industrial electronics repair">Industrial electronics repair</option> <option value="Other service">Other service</option> </select>
        </div>
-       <div class="mt-5"><label data-template-id="message-label" class="canva-text mb-2 block text-sm font-semibold" for="message"></label> <textarea data-template-id="message-input" class="canva-input form-control min-h-32 resize-y" id="message" name="message" required></textarea>
+       <div class="mt-5">
+        <label data-template-id="message-label" class="canva-text mb-2 block text-sm font-semibold" for="message"></label> <textarea data-template-id="message-input" class="canva-input form-control min-h-32 resize-y" id="message" name="message" required></textarea>
        </div>
-       <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center"><button data-template-id="submit-button" id="submit-button" class="canva-button focus-ring inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3.5 font-semibold transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60" type="submit"> <i data-lucide="send" aria-hidden="true" class="h-4 w-4"></i> <span data-template-id="submit-label" class="canva-text"></span> </button>
+       <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
+        <button data-template-id="submit-button" id="submit-button" class="canva-button focus-ring inline-flex items-center justify-center gap-2 rounded-sm bg-[#f3b31a] px-5 py-3.5 font-semibold text-[#101714] transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60" type="submit"> <i data-lucide="send" aria-hidden="true" class="h-4 w-4"></i> <span data-template-id="submit-label" class="canva-text">Send Service Request</span> </button>
         <p id="request-status" class="request-status hidden rounded-sm border px-4 py-3 text-sm font-medium" role="status" aria-live="polite"></p>
        </div>
       </form>
