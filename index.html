@@ -95,10 +95,6 @@
   .service-card{background:var(--white);border:1px solid var(--line);}
   .service-img{height:200px;background-size:cover;background-position:center;}
   .service-body{padding:24px;}
-  .service-icon{
-    width:42px;height:42px;background:var(--ink);border-radius:4px;
-    display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--amber);
-  }
   .service-body h3{font-size:18px;font-weight:700;margin-bottom:10px;}
   .service-body p{font-size:14px;color:var(--muted);}
 
@@ -123,14 +119,19 @@
   .contact-info > p{color:var(--muted);font-size:14.5px;margin-bottom:28px;}
   .divider{border-top:1px solid var(--line);margin-bottom:26px;}
   .info-row{display:flex;gap:14px;margin-bottom:22px;align-items:flex-start;}
-  .info-icon{
-    width:20px;height:20px;color:var(--amber-dark);flex-shrink:0;margin-top:2px;
-  }
   .info-label{font-size:12px;color:var(--muted);margin-bottom:3px;}
   .info-value{font-weight:600;font-size:15px;border-bottom:2px solid var(--amber);display:inline-block;}
   .map-box{
-    margin-top:20px;height:180px;background:#dcdacf;border:1px solid var(--line);
-    display:flex;align-items:center;justify-content:center;color:#9a9789;font-size:13px;
+    margin-top:20px;
+    height:250px;
+    background:#dcdacf;
+    border:1px solid var(--line);
+    overflow:hidden;
+  }
+  .map-box iframe{
+    width:100%;
+    height:100%;
+    border:0;
   }
 
   .contact-form{background:#fff;padding:44px;}
@@ -289,7 +290,9 @@
           </div>
         </div>
 
-        <div class="map-box">Map</div>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.289926798724!2d76.9972282740931!3d11.016860289146914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85785df7c8c79%3A0x62c83ecee717de65!2sCnc%20Monitor%20Care!5e0!3m2!1sen!2sin!4v1788877774359!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
       </div>
 
       <div class="contact-form">
@@ -348,11 +351,10 @@
 
 <script>
   function submitForm(form) {
-    // Optional: prevent double submission and show loading
     const btn = form.querySelector('.submit-btn');
     btn.disabled = true;
     btn.textContent = 'Sending...';
-    return true; // allow form to submit
+    return true;
   }
 </script>
 
